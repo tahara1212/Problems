@@ -3,9 +3,8 @@
  * @return {string[]}
  */
 var fizzBuzz = function(n) {
-    const arr = [...Array(n)].map((v, index) => {
-        return index + 1;
-      });
+    const arr = [...Array(n + 1).keys()];
+    arr.shift();
     const res = arr.map((num) => {
         if (num % 3 === 0 && num % 5 === 0) {
             return "FizzBuzz";
@@ -19,3 +18,5 @@ var fizzBuzz = function(n) {
     });
     return res;
 };
+
+console.log(fizzBuzz(15))
