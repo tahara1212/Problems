@@ -1,6 +1,5 @@
 const filterLog = (lines) => {
-    
-    const length = lines.shift();
+    lines.shift();
     const target = lines.shift();
     const res = lines.filter((line) => {
         return line.indexOf(target) > -1 ? line : false;
