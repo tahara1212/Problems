@@ -10,9 +10,9 @@ function circleInRectangle(inputVal) {
   if (x >= 0 && x < w && y >= 0 && y < h && r >= 0 && r <= hankei) {
     console.log("Yes");
   } else {
-    console.log("No")
+    console.log("No");
   }
 }
 
 const sampleInput = "30 50 15 25 20";
-circleInRectangle(sampleInput)
+circleInRectangle(sampleInput);
