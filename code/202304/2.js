@@ -1,5 +1,4 @@
-const x = "15 10 12";
-// let x = require("fs").readFileSync("/dev/stdin", "utf8");
+let x = require("fs").readFileSync("/dev/stdin", "utf8");
 
 const [a, b, c] = Array.from(x.split(" ").sort(), Number);
 console.log(`${a} ${b} ${c}`)
